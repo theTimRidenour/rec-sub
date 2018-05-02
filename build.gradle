@@ -17,7 +17,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.4425entertainment'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
+sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -25,16 +25,9 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-data-rest')
-	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile('org.springframework.session:spring-session-core')
-	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile('io.projectreactor:reactor-test')
-	testCompile('org.springframework.security:spring-security-test')
 }
